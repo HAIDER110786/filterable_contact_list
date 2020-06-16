@@ -1,4 +1,5 @@
 document.querySelector('#SearchContact').addEventListener('keyup',()=>{
+        
         const searchedContact = (document.querySelector('#SearchContact').value)
         
         const allAvailableContacts = document.querySelectorAll('#contacts');
@@ -6,7 +7,9 @@ document.querySelector('#SearchContact').addEventListener('keyup',()=>{
         allAvailableContacts.forEach(contact=>{
                 
             let j = '';
+                
             for(let i = 0 ; i < searchedContact.length ; i++){
+                    
                 j+=contact.textContent[i];
             }
             
@@ -15,11 +18,14 @@ document.querySelector('#SearchContact').addEventListener('keyup',()=>{
             if(j!==searchedContact){
                     
                 contact.style.display = 'none';
-            }else{
+            }
+             else{
                     
                 contact.style.display = 'block';
             }
-        })
-    })
+        }
+        )
+    }
+)
 
 
