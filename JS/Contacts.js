@@ -8,14 +8,16 @@ document.querySelector('#SearchContact').addEventListener('keyup',()=>{
                 
             let j = '';
                 
-            for(let i = 0 ; i < searchedContact.length ; i++){
+            for(let i = 0 ; i < searchedContact.length ; i++)
+            {
                     
                 j+=contact.textContent[i];
             }
             
             console.log(contact.childElementCount);
                 
-            if(j!==searchedContact){
+            if(j!==searchedContact)
+            {
                     
                 contact.style.display = 'none';
             }
@@ -27,5 +29,6 @@ document.querySelector('#SearchContact').addEventListener('keyup',()=>{
         )
     }
 )
+
 
 
